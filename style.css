@@ -1,0 +1,155 @@
+/* RESETS AT TOP */
+
+body, h1, h2, h3, ul {
+    margin: 0;
+    padding: 0;
+}
+
+.pc-box, .shadow2, .pc-lady2 {
+    display: none;
+}
+
+/* STYLE */
+
+body {
+    background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    height: 100vh;
+    padding: 20px 20px;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 11px;
+    position: relative;
+    /* box-sizing: border-box; */
+    /* display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column; */
+}
+
+.all-art {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+h1 {
+    position: absolute;
+    width: 225px;
+    z-index: 5;
+    top: 37px;
+}
+
+.faq-container {
+    background-color: white;
+    padding: 15px 15px 50px 15px;
+    border-radius: 20px;
+    height: auto;
+    width: 270px;
+    position: absolute;
+    top: 140px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 10px 20px 4px #0000003d;
+}
+
+.shadow-img {
+    width: 225px;
+    position: relative;
+    top: -15px;
+}
+
+h2, h3 {
+    text-align: center;
+}
+
+h3 {
+    font-size: xx-large;
+    padding: 30px 0;
+}
+
+ul {
+    list-style: none;
+    width: 90%;
+}
+
+li {
+    padding: 20px 0;
+    border-bottom: 1px solid hsl(240, 5%, 91%);
+}
+
+.question {
+    font-weight: 700;
+    color: (237, 12%, 33%);
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.arrow-main { 
+    /* position: absolute;  */
+    right: 0px; 
+    cursor: pointer;
+    transition: transform 0.5s;
+} 
+
+.arrow-main:hover {
+    transform: scale(1.4);
+}
+
+.fa-solid{
+    transform: rotate(0deg);
+    transition: transform 0.5s linear;
+  }
+  
+.fa-solid.open{
+    transform: rotate(180deg);
+    transition: transform 0.5s linear;
+}
+
+.non-active { 
+    display: none; 
+  } 
+
+.answer{ 
+    font-size: 12px; 
+    padding-top: 10px;
+}  
+
+
+@media only screen and (min-width: 768px) {
+
+.shadow-img, h1 {
+    display: none;
+}
+
+.desktop-imgs {
+    position: relative;
+}
+
+.pc-box, .pc-lady2 {
+    display: contents;
+}
+
+
+.shadow2 {
+    position: absolute;
+}
+
+
+.faq-container {
+    width: 75%;
+    z-index: 1;
+    background-image: url("/images/bg-pattern-desktop.svg");
+    background-image: url("/images/illustration-woman-online-desktop.svg");
+    background-position: -100px;
+    background-size: 400px;
+    background-repeat: no-repeat;
+}
+
+
+
+
+}
